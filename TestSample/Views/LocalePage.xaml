@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="TestSample.Views.LocalePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TestSample.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:TestSample.Models.UI"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel HorizontalAlignment="Left">
+                <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{ui:LocaleStringMarkup Name=Tip_FromTip}" />
+                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="{ui:LocaleStringMarkup Name=Tip_Greeting}" />
+            </StackPanel>
+
+            <StackPanel Margin="0,20,0,0" HorizontalAlignment="Left">
+                <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{ui:LocaleStringMarkup Name=Tip_FromControl}" />
+                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="{ui:LocaleStringMarkup Name=Control_GreetingBlock, Property=Text}" />
+            </StackPanel>
+
+            <Button
+                Margin="0,20,0,0"
+                Click="Button_Click"
+                Content="{ui:LocaleStringMarkup Name=Control_SwitchLanguageButton,
+                                                Property=Content}"
+                Style="{StaticResource AccentButtonStyle}" />
+        </StackPanel>
+    </Grid>
+</Page>
