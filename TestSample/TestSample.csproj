@@ -119,12 +119,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LoopItemsPanel\LoopItemsPanel.cs" />
+    <Compile Include="Controls\LoopItemsPanel\LoopItemsPanel.Event.cs" />
+    <Compile Include="Controls\LoopItemsPanel\LoopItemsPanel.Field.cs" />
+    <Compile Include="Controls\LoopItemsPanel\LoopItemsPanel.Methods.cs" />
+    <Compile Include="Controls\LoopItemsPanel\LoopItemsPanel.Properties.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Enum\LocaleStringType.cs" />
     <Compile Include="Models\Enum\NavigationType.cs" />
     <Compile Include="Models\UI\BindableBase.cs" />
+    <Compile Include="Models\UI\DispatchThrottler.cs" />
     <Compile Include="Models\UI\LocaleStringMarkupExtension.cs" />
     <Compile Include="Models\UI\NavigationItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,6 +141,9 @@
     </Compile>
     <Compile Include="Views\LocalePage.xaml.cs">
       <DependentUpon>LocalePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PanelPage.xaml.cs">
+      <DependentUpon>PanelPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SubViews\FirstPage.xaml.cs">
       <DependentUpon>FirstPage.xaml</DependentUpon>
@@ -172,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\LocalePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PanelPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

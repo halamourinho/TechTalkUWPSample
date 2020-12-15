@@ -11,7 +11,7 @@
         <DataTemplate x:Key="TestItemTemplate" x:DataType="local:TestModel">
             <Button
                 Width="150"
-                Click="{x:Bind OnButtonClick}"
+                Click="Button_Click"
                 Content="{x:Bind ToString()}" />
         </DataTemplate>
     </Page.Resources>

@@ -132,6 +132,9 @@
   <data name="Tip_Locale" xml:space="preserve">
     <value>Locale</value>
   </data>
+  <data name="Tip_LoopPanel" xml:space="preserve">
+    <value>Loop Panel</value>
+  </data>
   <data name="Tip_PageInstance" xml:space="preserve">
     <value>Page instance</value>
   </data>

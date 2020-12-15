@@ -132,6 +132,9 @@
   <data name="Tip_Locale" xml:space="preserve">
     <value>本地化</value>
   </data>
+  <data name="Tip_LoopPanel" xml:space="preserve">
+    <value>循环面板</value>
+  </data>
   <data name="Tip_PageInstance" xml:space="preserve">
     <value>页面实例</value>
   </data>

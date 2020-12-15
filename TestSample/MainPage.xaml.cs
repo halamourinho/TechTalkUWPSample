@@ -27,12 +27,15 @@ namespace TestSample
     {
 
         public MainViewModel vm;
+        public InstanceViewModel instanceVM;
         public MainPage()
         {
             this.InitializeComponent();
             
             vm = new MainViewModel();
             vm.ReloadCurrentPage += OnReloadCurrentPage;
+
+            instanceVM = new InstanceViewModel();
         }
 
         private void OnReloadCurrentPage(object sender, EventArgs e)

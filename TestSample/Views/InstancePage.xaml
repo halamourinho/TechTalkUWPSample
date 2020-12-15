@@ -50,6 +50,12 @@
                     Content="Page 2"
                     CornerRadius="2"
                     Style="{StaticResource ButtonRevealStyle}" />
+                <Button
+                    x:Name="NewWindowButton"
+                    Margin="10,0,0,0"
+                    Content="New window"
+                    Style="{StaticResource AccentButtonStyle}"
+                    Click="NewWindowButton_Click"/>
             </StackPanel>
         </Grid>
         <Grid

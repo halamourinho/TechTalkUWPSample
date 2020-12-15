@@ -11,5 +11,6 @@
         Control_GreetingBlock,
         Control_SwitchLanguageButton,
         Tip_Locale,
+        Tip_LoopPanel,
     }
 }

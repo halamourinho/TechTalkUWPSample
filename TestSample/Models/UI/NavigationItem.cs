@@ -27,7 +27,8 @@ namespace TestSample.Models.UI
             return new List<NavigationItem>
             {
                 new NavigationItem(App.localeHelper.GetString(LocaleStringType.Tip_PageInstance),"\uE74C",typeof(InstancePage)),
-                new NavigationItem(App.localeHelper.GetString(LocaleStringType.Tip_Locale),"\uE164",typeof(LocalePage))
+                new NavigationItem(App.localeHelper.GetString(LocaleStringType.Tip_Locale),"\uE164",typeof(LocalePage)),
+                new NavigationItem(App.localeHelper.GetString(LocaleStringType.Tip_LoopPanel),"\uE13C",typeof(PanelPage))
             };
         }
     }
