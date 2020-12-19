@@ -51,6 +51,13 @@
                     CornerRadius="2"
                     Style="{StaticResource ButtonRevealStyle}" />
                 <Button
+                    x:Name="Page3Button"
+                    Margin="10,0,0,0"
+                    Click="Page3Button_Click"
+                    Content="Page 3"
+                    CornerRadius="2"
+                    Style="{StaticResource ButtonRevealStyle}" />
+                <Button
                     x:Name="NewWindowButton"
                     Margin="10,0,0,0"
                     Content="New window"
@@ -88,6 +95,20 @@
                         FontWeight="Bold"
                         Foreground="{ThemeResource SystemAccentColor}"
                         Text="{x:Bind vm.Page2Count, Mode=OneWay}" />
+                </TextBlock>
+                <StackPanel
+                    Width="1"
+                    Height="35"
+                    Margin="15,0"
+                    VerticalAlignment="Center"
+                    Background="{ThemeResource SystemChromeGrayColor}" />
+                <TextBlock VerticalAlignment="Center">
+                    <Run Text="Page3 instance count:" />
+                    <Run
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="{ThemeResource SystemAccentColor}"
+                        Text="{x:Bind vm.Page3Count, Mode=OneWay}" />
                 </TextBlock>
             </StackPanel>
             <Button

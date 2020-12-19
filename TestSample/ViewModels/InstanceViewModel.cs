@@ -23,6 +23,13 @@ namespace TestSample.ViewModels
             set => Set(ref _page2Count, value);
         }
 
+        private int _page3Count;
+        public int Page3Count
+        {
+            get => _page3Count;
+            set => Set(ref _page3Count, value);
+        }
+
         public static InstanceViewModel Current;
 
         public InstanceViewModel()
@@ -47,6 +54,15 @@ namespace TestSample.ViewModels
         public void DecreasePage2Count()
         {
             Page2Count--;
+        }
+        public void IncreasePage3Count()
+        {
+            Page3Count++;
+        }
+
+        public void DecreasePage3Count()
+        {
+            Page3Count--;
         }
     }
 }

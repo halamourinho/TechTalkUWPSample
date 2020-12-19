@@ -75,5 +75,10 @@ namespace TestSample.Views
                 appWindow = null;
             };
         }
+
+        private void Page3Button_Click(object sender, RoutedEventArgs e)
+        {
+            SubFrame.Navigate(typeof(SubViews.ThirdPage));
+        }
     }
 }

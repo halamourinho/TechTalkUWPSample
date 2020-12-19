@@ -23,13 +23,13 @@ namespace TestSample.Views.SubViews
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SecondPage : Page
+    public sealed partial class ThirdPage : Page
     {
         private ObservableCollection<TestModel> TestCollection = new ObservableCollection<TestModel>();
-        public SecondPage()
+        public ThirdPage()
         {
             this.InitializeComponent();
-            InstanceViewModel.Current?.IncreasePage2Count();
+            InstanceViewModel.Current?.IncreasePage3Count();
             //var settings = new UISettings();
             //settings.ColorValuesChanged += OnColorValuesChanged;
 
@@ -42,49 +42,14 @@ namespace TestSample.Views.SubViews
             // Do nothing...
         }
 
-        ~SecondPage()
+        ~ThirdPage()
         {
-            InstanceViewModel.Current?.DecreasePage2Count();
+            InstanceViewModel.Current?.DecreasePage3Count();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-
-        private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-
-        }
-    }
-
-    public class TestModel
-    {
-        public int Number { get; set; }
-
-        public void OnButtonClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        public TestModel(int num)
-        {
-            this.Number = num;
-        }
-
-        public static List<TestModel> GetItems()
-        {
-            var result = new List<TestModel>();
-            for (int i = 0; i < 2; i++)
-            {
-                result.Add(new TestModel(i));
-            }
-            return result;
-        }
-
-        public override string ToString()
-        {
-            return $"Item {Number}";
         }
     }
 }

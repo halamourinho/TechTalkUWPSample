@@ -148,6 +148,9 @@
     <Compile Include="Views\SubViews\FirstPage.xaml.cs">
       <DependentUpon>FirstPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubViews\ThirdPage.xaml.cs">
+      <DependentUpon>ThirdPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SubViews\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
     </Compile>
@@ -191,6 +194,10 @@
     <Page Include="Views\SubViews\FirstPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SubViews\ThirdPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\SubViews\SecondPage.xaml">
       <SubType>Designer</SubType>
